@@ -6,5 +6,4 @@ residence = "New York City"
 age = "twenty five"
 
 
-print ("My name is " + name)
-print ("I am ")
+print("My name is " + name + ", I am " + age + " years old. I live in " + residence + " and I work as an " + job + ".")
