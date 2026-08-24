@@ -2,9 +2,9 @@
 
 name = "Vinny"
 job = "Engineer"
-residence = input ()
-age = input ("How old am I? ")
+residence = "New York City"
+age = "twenty five"
 
 
-
-print ("I am, " + age)
+print ("My name is " + name)
+print ("I am ")
