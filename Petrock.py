@@ -25,7 +25,7 @@ while True:
         print("\n Oh no! Your pet rock has died of sickness from not being washed.")
         break
 
-    if random.random() < 0.005:
+    if random.random() < 0.007:
         print("\n Oh no! A seagull stole your pet rock!")
         break
 
