@@ -3,7 +3,11 @@
 import random
 import time
 
+#welcome message
+
 print('Welcome to pet rock! Type "feed" to feed your pet rock! Type "pet" to pet your pet rock, type "wash" to wash your pet rock and type "sunscreen" to put suncreen on your pet rock! ')
+
+#pet rock care variables
 
 start_time = time.time()
 last_fed_time = time.time()
@@ -11,34 +15,40 @@ last_pet_time = time.time()
 last_wash_time = time.time()
 last_sunscreen_time = time.time()
 
+#pet rock living conditions
+
 while True:
     current_time = time.time()
 
-    if current_time - last_fed_time > 10:
+#controllable variables (These are what you do to keep the pet rock alive)
+
+    if current_time - last_fed_time > 5:
         print("\n Oh no! Your pet rock has starved.")
         break
 
-    if current_time - last_pet_time > 15:
+    if current_time - last_pet_time > 7.5:
         print("\n Oh no! Your pet rock died of depression from not being pet.")
         break
 
-    if current_time - last_wash_time > 20:
+    if current_time - last_wash_time > 10:
         print("\n Oh no! Your pet rock has died of sickness from not being washed.")
         break
 
-    if current_time - last_sunscreen_time > 30:
+    if current_time - last_sunscreen_time > 15:
             print("\n Oh no! Your pet rock has died of sunburn!")
             break
 
-    if random.random() < 0.01:
+#pet rock uncontrollable commands (These are random and unpreventable)
+
+    if random.random() < 0.05:
         print("\n Oh no! A seagull stole your pet rock!")
         break
 
-    if random.random() < 0.005:
+    if random.random() < 0.01:
         print("\n Oh no! Your pet rock has died of cancer!")
         break
 
-    if random.random() < 0.001:
+    if random.random() < 0.005:
         print("\n Oh no! Your pet rock spontaneously combusted!")
         break
 
@@ -51,9 +61,11 @@ while True:
                 break
     
 
+#input message
 
     user_input = input("\nWhat would you like to do? ").lower().strip()
 
+#pet rock command validity
 
     if user_input == "feed":
         print("Pet Rock Has Been Fed!")
