@@ -35,16 +35,16 @@ while True:
         break
 
     if current_time - last_sunscreen_time > 15:
-            print("\n Oh no! Your pet rock has died of sunburn!")
+            print("\n Oh no! Your pet rock has died of sunburn!")   
             break
 
 #pet rock uncontrollable commands (These are random and unpreventable)
 
-    if random.random() < 0.05:
+    if random.random() < 0.045:
         print("\n Oh no! A seagull stole your pet rock!")
         break
 
-    if random.random() < 0.01:
+    if random.random() < 0.0075:
         print("\n Oh no! Your pet rock has died of cancer!")
         break
 
@@ -56,7 +56,7 @@ while True:
             print("\n Oh no! Your pet rock was drafted into World War 3!")
             break
 
-    if random.random() < 0.0005:
+    if random.random() < 0.025:
                 print("\n Oh no! Your pet rock was killed in a firery 4 car car crash on the freeway after attempting to flee in a high speed chase after recieving a $30 parking ticket!")
                 break
     
