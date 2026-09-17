@@ -40,7 +40,7 @@ while True:
 
 #pet rock uncontrollable commands (These are random and unpreventable)
 
-    if random.random() < 0.045:
+    if random.random() < 0.025:
         print("\n Oh no! A seagull stole your pet rock!")
         break
 
@@ -60,6 +60,13 @@ while True:
                 print("\n Oh no! Your pet rock was killed in a firery 4 car car crash on the freeway after attempting to flee in a high speed chase after recieving a $30 parking ticket!")
                 break
     
+    if random.random() < 0.0005:
+         print("\n Oh no! Your pet rock eroded into sand!")
+         break
+    
+    if random.random() < 0.0001:
+         print("\n Oh no! Your pet rock was walking down the street at night while he crossed the crosswalk, a car didnt see him and ended up hitting him at 65 mph, He didnt die from this though he was succesfully resucitated and transported to the emergency room where he underwent 6 different lifesaving prcoedures, He then went home and died of completely unrelated causes due to his severe nicotine addiction!")
+         break
 
 #input message
 
