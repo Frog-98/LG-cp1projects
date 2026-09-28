@@ -1,0 +1,18 @@
+#Lincoln Girot, Crew Shares Pseudocode
+
+GET Number_of_Pirates
+
+Money = (Range 500-5000)
+
+Yondu_Share = Money x 13%
+Remaining_Money = Money - Yondu_Share
+
+Peter_Share = Money x 11%
+Remaining_Money = Money - Peter_Share
+
+Crew_money = Remaining_Money ÷ Number_of_Pirates
+
+DISPLAY - “Total stolen money = (Money)”
+DISPLAY - “Yondu’s share = (Yondu_Share)”
+DISPLAY - “Peter’s share = (Peter_Share)
+DISPLAY - “Crew Share = (Crew_Money)
