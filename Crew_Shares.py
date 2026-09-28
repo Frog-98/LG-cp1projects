@@ -2,7 +2,7 @@
 
 import random
 
-number_of_pirates = int(input("How many pirates are there?"))
+number_of_pirates = int(input("How many pirates are there including Yondu and Peter?"))
 
 units = random.randint(500, 5000)
 
@@ -13,6 +13,8 @@ peter_share = round(remaining_units*0.11,2)
 remaining_units -= peter_share
 
 divided_units = round(remaining_units / number_of_pirates,2)
+
+(number_of_pirates -2)*3
 
 """
 yondu's share is 13% (times by 0.13)
