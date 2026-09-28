@@ -26,15 +26,15 @@ while True:
         print("\n Oh no! Your pet rock has starved.")
         break
 
-    if current_time - last_pet_time > 7.5:
+    elif current_time - last_pet_time > 7.5:
         print("\n Oh no! Your pet rock died of depression from not being pet.")
         break
 
-    if current_time - last_wash_time > 10:
+    elif current_time - last_wash_time > 10:
         print("\n Oh no! Your pet rock has died of sickness from not being washed.")
         break
 
-    if current_time - last_sunscreen_time > 15:
+    elif current_time - last_sunscreen_time > 15:
             print("\n Oh no! Your pet rock has died of sunburn!")   
             break
 
