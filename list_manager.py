@@ -1,6 +1,6 @@
 #LG, List Manager
 
-shopping_list=["Egss", "Milk"]
+shopping_list=["Eggs", "Milk"]
 while True:
     #get their input about adding, removing, printing, or exiting
     action = input("Choose a command [Add, Print, Remove, Exit] ").lower().strip()
