@@ -12,7 +12,7 @@ while True:
         print("Invalid number.")
 
     number_list =[(user_number)]
-    factored_number_list =[(math.factorial(user_number))]
+    factored_number_list = list(map(math.factorial, number_list))
 
     print(f"{number_list[0]}! is:")
     print(*factored_number_list)
