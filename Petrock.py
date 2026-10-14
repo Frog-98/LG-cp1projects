@@ -37,6 +37,7 @@ while True:
     elif current_time - last_sunscreen_time > 15:
             print("\n Oh no! Your pet rock has died of sunburn!")   
             break
+  
 
 #pet rock uncontrollable commands (These are random and unpreventable)
 
@@ -94,5 +95,3 @@ end_time = time.time()
 total_time_alive = round(end_time - start_time, 1)
 
 print(f"\n Your pet rock has died. It survived for {total_time_alive} seconds.")
-
-
