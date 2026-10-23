@@ -1,0 +1,8 @@
+# VL, Debugging Types
+import random
+
+index = random.randint(0,7)
+
+siblings = ["Dutch", "Arthur", "Hosea", "Charles", "Lenny", "Javier", "Bill", "John"]
+
+print(siblings[index])
