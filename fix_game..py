@@ -47,4 +47,7 @@ for i in range(1, rounds - 1):
 
 print(f"Your best round took only {best_round} guesses!")
 
-#This program works by selecting s random number between 1-20 and sets the found condition to false. Then
+#This program works by selecting a random number between 1-20 and setting the found condition to false.
+#Then it has the player try to guess the number.
+#Then it tests if the guess is correct, if it is correct it sets the win condition to true which ends the game. 
+#If the number is too low or too high it tells the player that and then has them guess again.
