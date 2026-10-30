@@ -8,10 +8,11 @@ has_capital = (char.isupper() for char in user_password)
 has_number = (num() for num in user_password)
 has_lower = (char() for char in user_password)
 s_characters = ("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "=")
-
+length_password = len(user_password)
 while True:
-    if user_password >= 8 and user_password <= 20:
-        character_score = 1
+    if length_password > 8:
+        length_score = 1
+        break
     else:
         length_score = 0
         break
@@ -19,6 +20,7 @@ while True:
 while True:
     if has_capital is True:
         capital_score = 1
+        break
     else:
         capital_score = 0
         break
@@ -26,6 +28,7 @@ while True:
 while True:
     if has_number is True:
         number_score = 1
+        break
     else:
         number_score = 0
         break
@@ -33,6 +36,7 @@ while True:
 while True:
     if has_lower is True:
         lower_score = 1
+        break
     else:
         lower_score = 0
         break
@@ -48,14 +52,20 @@ while True:
 
 total_score = int(length_score) + int(capital_score) + int(number_score) + int(lower_score) + int(s_score)
 
-if total_score == 3:
-    print("3/3, Strong Password")
+if total_score == 5:
+    print("5/5, Strong Password")
 
-if total_score == 2:
-    print("2/3")
+elif total_score == 4:
+    print("4/5")
 
-if total_score == 1:
-    print()
+elif total_score == 3:
+    print("3/5")
+
+elif total_score == 2:
+    print("2/5")
+
+elif total_score == 1:
+    print("1/5")
 
 else:
     print("Invalid Password")
