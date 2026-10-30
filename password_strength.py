@@ -6,7 +6,7 @@ user_password = input("Create a password. Password strength is determined by cap
 
 has_capital = (char.isupper() for char in user_password)
 has_number = (num() for num in user_password)
-has_lower = (char() for char in user_password)
+has_lower = (char.islower() for char in user_password)
 s_characters = ("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "=")
 length_password = len(user_password)
 while True:
@@ -68,4 +68,4 @@ elif total_score == 1:
     print("1/5")
 
 else:
-    print("Invalid Password")
+    print("0/5")
