@@ -10,7 +10,7 @@ has_lower = (char() for char in user_password)
 s_characters = ("!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "=")
 
 while True:
-    if user_password >= 8 and user_password <= 20:
+    if user_password >= 8:
         character_score = 1
     else:
         length_score = 0
@@ -49,13 +49,19 @@ while True:
 total_score = int(length_score) + int(capital_score) + int(number_score) + int(lower_score) + int(s_score)
 
 if total_score == 3:
-    print("3/3, Strong Password")
+    print("5/5, Strong Password")
 
 if total_score == 2:
-    print("2/3")
+    print("4/5")
 
 if total_score == 1:
-    print()
+    print("3/5")
+
+if total_score == 1:
+    print("2/5")
+
+if total_score == 1:
+    print("1/5")
 
 else:
     print("Invalid Password")
