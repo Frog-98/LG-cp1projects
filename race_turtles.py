@@ -2,6 +2,13 @@
 import turtle as t
 import random
 
+t.penup()
+t.goto(600, 300)
+
+t.pendown()
+t.goto(600, -300)
+t.hideturtle()
+
 turtle_green = t.Turtle()
 turtle_blue = t.Turtle()
 turtle_red = t.Turtle()
@@ -39,11 +46,15 @@ turtle_orange.penup()
 turtle_orange.goto(0, -200)
 turtle_orange.pendown()
 
-turtle_green.forward(600)
-turtle_blue.forward(600)
-turtle_red.forward(600)
-turtle_purple.forward(600)
-turtle_orange.forward(600)
+all_turtles = [turtle_green, turtle_blue, turtle_red, turtle_purple, turtle_orange]
+
+while True:
+    chosen_turtle = random.choice(all_turtles)
+    chosen_turtle.forward(50)
+    if chosen_turtle.xcor() >= 600:
+        print((chosen_turtle), "wins!")
+        break
+    
 
 
-
+    
