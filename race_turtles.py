@@ -51,7 +51,7 @@ all_turtles = [turtle_green, turtle_blue, turtle_red, turtle_purple, turtle_oran
 while True:
     chosen_turtle = random.choice(all_turtles)
     winning_color = chosen_turtle.pencolor()
-    chosen_turtle.forward(50)
+    chosen_turtle.forward(0.5)
     if chosen_turtle.xcor() >= 600:
         print(f"{winning_color} wins!")
         break

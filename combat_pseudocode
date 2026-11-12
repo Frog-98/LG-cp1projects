@@ -1,0 +1,15 @@
+#LG, Pseudocode
+
+GET user stats
+DISPLAY "A wild chickapu has appeared! Defeat it to continue."
+CHOICE RANDOM (1, 2)
+IF choice 1
+GET player move
+IF player move generates damage
+lOWER enemy health
+ELSE switch turn
+IF choice 2
+CHOICE RANDOM (Move1, move2, move3)
+IF enemy move generates damage
+LOWER health
+IF Enemy Health <= 0
