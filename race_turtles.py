@@ -53,7 +53,7 @@ while True:
     winning_color = chosen_turtle.pencolor()
     chosen_turtle.forward(50)
     if chosen_turtle.xcor() >= 600:
-        print((chosen_turtle), "wins!")
+        print(f"{winning_color} wins!")
         break
     
 
