@@ -2,6 +2,8 @@
 import turtle as t
 import random
 
+t.exitonclick
+
 t.penup()
 t.goto(600, 300)
 
@@ -58,3 +60,5 @@ while True:
     if chosen_turtle.xcor() >= 600:
         print(f"Turtle Wins!")
         break
+
+t.done

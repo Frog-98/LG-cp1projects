@@ -7,9 +7,17 @@ IF choice 1
 GET player move
 IF player move generates damage
 lOWER enemy health
+Display lower health
 ELSE switch turn
+
 IF choice 2
 CHOICE RANDOM (Move1, move2, move3)
 IF enemy move generates damage
 LOWER health
+DISPLAY lower heatlh
+
 IF Enemy Health <= 0
+DISPLAY "PLAYER WINS!"
+
+IF Player Health <= 0
+DISPLAY "ENEMY WINS!"
