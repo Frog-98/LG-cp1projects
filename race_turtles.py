@@ -2,6 +2,8 @@
 import turtle as t
 import random
 
+t.exitonclick
+
 t.penup()
 t.goto(600, 300)
 
@@ -50,11 +52,18 @@ all_turtles = [turtle_green, turtle_blue, turtle_red, turtle_purple, turtle_oran
 
 while True:
     chosen_turtle = random.choice(all_turtles)
+    #Defines winner
     winning_color = chosen_turtle.pencolor()
-    chosen_turtle.forward(0.5)
+    #Randomizes distance
+    distance = random.randint(1, 50)
+    chosen_turtle.forward(distance)
+    #Defines winning condition
     if chosen_turtle.xcor() >= 600:
         print(f"{winning_color} wins!")
         break
+
+
+t.done()
     
 
 

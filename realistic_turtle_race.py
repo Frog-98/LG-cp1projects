@@ -52,7 +52,7 @@ while True:
     chosen_turtle = random.choice(all_turtles)
     winning_color = chosen_turtle.pencolor()
     chosen_turtle.forward(0.25)
-    if random.random() < 0.005:
+    if random.random() < 0.1:
         turn_angle = random.choice([-15, 15])
         chosen_turtle.right(turn_angle)
     if chosen_turtle.xcor() >= 600:
